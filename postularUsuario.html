@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Servicios</title>
+    <link rel="stylesheet" href="../css/postularUsuario.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Servicios</h2>
+       <!-- form para registrar los servicios -->
+<form id="registro-servicios-form">
+    <!-- opciones de planes en el form -->
+    <div class="form-group">
+        <label for="opciones-servicio">Seleccione el área al que desea postular:</label>
+        <select id="opciones-servicio" name="opciones-servicio" required>
+            <option value="seleccionar">Áreas</option>
+            <option value="Ingeniería">Ingeniería</option>
+            <option value="Licenciaturas">Licenciaturas</option>
+            <option value="Ciencias médicas">Ciencias médicas</option>
+        </select>
+    </div>
+    <!-- opciones de escribir texto para colocar fecha y hora en el que se pagará de forma presencial -->
+    <div class="form-group">
+        <label for="valor-servicio">Describa cuál es su experiencia como docente</label>
+        <input type="text" id="valor-servicio" name="valor-servicio" required>
+    </div>
+    <!-- opciones en meses que contratará el servicio -->
+    <div class="form-group">
+        <label for="meses">¿Cuál es su nivel académico?</label>
+        <select id="meses" name="meses" required>
+            <option value="seleccionar">Nivel académico</option>
+            <option value="1">Título de tercer nivel</option>
+            <option value="2">Título de cuarto nivel</option>
+            <option value="3">Título de quinto nivel</option>
+            <option value="4">Título de sexto nivel</option>
+        </select>
+    </div>
+    <!-- Agregar campo para nombre -->
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <!-- Agregar campo para correo -->
+    <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+    </div>
+    <!-- Agregar campo para número de contacto -->
+    <div class="form-group">
+        <label for="contacto">Número de contacto:</label>
+        <input type="tel" id="contacto" name="contacto" required>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+<button type="button" id="regresarPerfilButton">Regresar al perfil</button>
+
+    </div>
+    <script src="../javascript/postularUsuario.js"></script>
+</body>
+</html>
